@@ -7,6 +7,84 @@
 <html>
 	<head>
 		<title>Punit Kumar Portfolio</title>
+		<style>
+			/* Your custom styles */
+			#experience {
+			  padding: 20px;
+			}
+		  
+			.job {
+			  margin-bottom: 40px;
+			}
+		  
+			.job h3 {
+			  margin-bottom: 5px;
+			}
+		  
+			.job p {
+			  font-style: italic;
+			  margin-bottom: 10px;
+			}
+		  
+			.job ul {
+			  padding-left: 20px;
+			  list-style-type: disc;
+			}
+		  
+			.job li {
+			  margin-bottom: 8px;
+			}
+		  
+			/* Fade-in animation */
+			.fade-in {
+			  opacity: 0;
+			  transform: translateY(20px);
+			  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+			}
+		  
+			.fade-in.visible {
+			  opacity: 1;
+			  transform: translateY(0);
+			}
+			.job.fade-in {
+  				transition-delay: 0.2s;
+			}
+			.job.fade-in:nth-of-type(2) {
+  				transition-delay: 0.4s;
+			}
+			.job.fade-in:nth-of-type(3) {
+  				transition-delay: 0.6s;
+			}
+			#intro {
+  				position: relative;
+  				overflow: hidden;
+			}
+
+			#intro::before {
+  				content: "";
+  				position: absolute;
+  				top: 0;
+  				left: 0;
+  				width: 100%;
+  				height: 100%;
+  				background-image: url('images/'); /* Replace with your path */
+  				background-size: cover;
+  				background-repeat: repeat;
+  				background-position: center;
+  				z-index: -1;
+  				opacity: 0.15; /* Adjust for visibility behind text */
+  				animation: scrollBackground 30s linear infinite;
+			}
+
+			@keyframes scrollBackground {
+  				0% {
+    				background-position: 0% 0%;
+  				}
+  				100% {
+    				background-position: 100% 0%;
+  				}
+			}
+		</style>		  
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -15,7 +93,7 @@
 	<body class="is-preload">
 
 		<!-- Wrapper -->
-			<div id="wrapper" class="fade-in">
+			<div id="wrapper">
 
 				<!-- Intro -->
 					<div id="intro">
@@ -29,7 +107,7 @@
 
 				<!-- Header -->
 					<header id="header">
-						<a href="index.html" class="logo">MEET ME</a>
+						<a href="index.html" class="logo">MEET Human Loving Introvert</a>
 					</header>
 
 				<!-- Nav -->
@@ -53,449 +131,81 @@
 						<!-- Post -->
 							<section class="post">
 								<header class="major">
-									<h1>Punit Kumar<br />
+									<h1 class = "fade-in">Punit Kumar<br />
 									</h1>
 								</header>
 
 								<!-- Text stuff -->
-									<h2>About</h2>
-									<p>Hi There, I'm Punit Kumar👋<br />
-										📊 Data Analytics Graduate Student | Data Science & Gen AI Enthusiast | Tech Writer
-										Current Focus <br />
-										- Pursuing a Master’s in Data Analytics with coursework in Statistical Modeling & Regression, Machine Learning, Data Visualization, Data Mining. <br />
-										- Building end-to-end Data Science and Machine Learning Projects to solve real-world problems, from data wrangling to model deployment. <br />
-										- Experimenting with Generative AI (LLMs, GANs, and diffusion models) to explore creative applications in text, image, and multimodal domains. <br />
-										- Writing tech articles to demystify complex concepts in data science, AI, and programming. <br /></p>
+									<h2 class = "fade-in">About</h2>
+									<p class = "fade-in">Hi There 👋, I'm Punit Kumar! Data Analytics Graduate Student 📊 | Data Science & Machine Learning, Artificial Intelligence, Gen AI Enthusiast | Tech Writer<br />
+										Currently, I’m pursuing my Master’s in Data Analytics at Clark University, where I focus on building intelligent solutions, deriving insights from complex datasets, and mastering the latest analytical tools and techniques.<br />
+										I believe in blending technical excellence with creative problem-solving. Whether it's crafting predictive models, designing AI agents, or visualizing data-driven stories, I strive to create real-world impact through data.<br />
+										When I’m not working, I enjoy watching anime, reading novels, or playing chess. These help me relax.<br />
+									</p>
 									<hr />
-									<h2>Heading Level 2</h2>
-									<h3>Heading Level 3</h3>
-									<h4>Heading Level 4</h4>
-									<h5>Heading Level 5</h5>
-									<h6>Heading Level 6</h6>
+									<div class = "fade-in" style="margin-left: 0;">
+										<h2 style="margin-left: 0;">Skills</h2>
+										<ul>
+										  <li><strong>Programming Languages: </strong>Python, R, SQL, C, C++, HTML</li>
+										  <li><strong>Data Visualization: </strong>Tableau, Power BI, Matplotlib, Seaborn, Plotly</li>
+										  <li><strong>Machine Learning: </strong>Scikit-Learn, XGBoost, Regresseion, Classification</li>
+										  <li><strong>Artificial Intelligence: </strong>AI Agents, Streamlit Apps, LLM Fine-Tuning</li>
+										  <li><strong>Database Management: </strong>MySQL, Snowflake</li>
+										  <li><strong>Technical Writing: </strong>AI/ML Concept Explanation, Data Storytelling, Coding</li>
+										  <li><strong>Others: </strong>GitHub, Data Cleaning, Data Preprocessing, Exploratory Data Analysis (EDA)</li>
+										</ul>
+									  </div>
 									<hr />
-									<header>
-										<h2>Heading with a Subtitle</h2>
-										<p>Lorem ipsum dolor sit amet nullam id egestas urna aliquam</p>
-									</header>
-									<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
-									<header>
-										<h3>Heading with a Subtitle</h3>
-										<p>Lorem ipsum dolor sit amet nullam id egestas urna aliquam</p>
-									</header>
-									<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
-									<header>
-										<h4>Heading with a Subtitle</h4>
-										<p>Lorem ipsum dolor sit amet nullam id egestas urna aliquam</p>
-									</header>
-									<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
-
-									<hr />
-
-								<!-- Lists -->
-									<h2>Lists</h2>
-									<div class="row">
-										<div class="col-6 col-12-small">
-
-											<h3>Unordered</h3>
-											<ul>
-												<li>Dolor pulvinar etiam.</li>
-												<li>Sagittis lorem eleifend.</li>
-												<li>Felis feugiat dolore viverra.</li>
-												<li>Dolor pulvinar etiam.</li>
-											</ul>
-
-											<h3>Alternate</h3>
-											<ul class="alt">
-												<li>Dolor pulvinar etiam etiam.</li>
-												<li>Sagittis adipiscing eleifend.</li>
-												<li>Felis enim dolore viverra.</li>
-												<li>Dolor pulvinar etiam etiam.</li>
-											</ul>
-
+									<section id="experience">
+										<h2 class = "fade-in">Work Experience</h2>
+									  
+										<div class="job fade-in">
+										  <h3>Data Scientist / Data Analyst / Tech Writer</h3>
+										  <p><strong>Freelancer</strong> | Mar 2019 – Present | Remote</p>
+										  <ul>
+											<li><strong>Data Science:</strong> Delivered data science solutions using regression, clustering, and predictive modeling, increasing decision accuracy by 25% and operational efficiency by 30%.</li>
+											<li><strong>Predictive Modeling:</strong> Built and deployed predictive models using ML libraries achieving up to 30% improvement in forecast accuracy for sales and demand planning.</li>
+											<li><strong>Data Cleaning:</strong> Cleaned and structured raw client data using Pandas and SQL, reducing data preparation time by 50% and improving model performance.</li>
+											<li><strong>Dashboard Development:</strong> Created dashboards in Tableau and Power BI to help non-technical stakeholders track KPIs and make faster strategic decisions.</li>
+											<li><strong>Technical Writing:</strong> Authored AI/ML tutorials, improving user understanding by 40% and reducing support queries by 25%.</li>
+										  </ul>
 										</div>
-										<div class="col-6 col-12-small">
-
-											<h3>Ordered</h3>
-											<ol>
-												<li>Dolor pulvinar etiam.</li>
-												<li>Etiam vel felis at viverra.</li>
-												<li>Felis enim feugiat magna.</li>
-												<li>Etiam vel felis nullam.</li>
-												<li>Felis enim et tempus.</li>
-											</ol>
-
-											<h3>Icons</h3>
-											<ul class="icons">
-												<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-												<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-												<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-												<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
-												<li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
-											</ul>
-											<ul class="icons alt">
-												<li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
-												<li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
-												<li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
-												<li><a href="#" class="icon brands alt fa-github"><span class="label">Github</span></a></li>
-												<li><a href="#" class="icon brands alt fa-dribbble"><span class="label">Dribbble</span></a></li>
-											</ul>
-
+									  
+										<div class="job fade-in">
+										  <h3>Data Analyst</h3>
+										  <p><strong>Cognizant Technology Solutions</strong> | Feb 2022 – Aug 2024 | Noida, India</p>
+										  <ul>
+											<li><strong>Data Analysis:</strong> Analyzed healthcare data using Python and SQL, built Tableau dashboards, and delivered insights that reduced patient wait times by 15%.</li>
+											<li><strong>Predictive Modeling:</strong> Used logistic regression and decision trees to estimate claim likelihood and potential fraud, improving detection accuracy by 25%.</li>
+											<li><strong>Data Cleaning:</strong> Cleaned datasets by resolving duplicates, handling missing values, and standardizing data, resulting in a 40% reduction in processing time.</li>
+											<li><strong>Dashboard Development:</strong> Built Tableau dashboards to visualize claim approval rates, customer retention, and fraud risk, supporting leadership in pricing and underwriting decisions.</li>
+										  </ul>
 										</div>
-									</div>
-									<h3>Definition</h3>
-									<dl>
-										<dt>Item 1</dt>
-										<dd>
-											<p>Lorem ipsum dolor vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>
-										</dd>
-										<dt>Item 2</dt>
-										<dd>
-											<p>Lorem ipsum dolor vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>
-										</dd>
-										<dt>Item 3</dt>
-										<dd>
-											<p>Lorem ipsum dolor vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>
-										</dd>
-									</dl>
-
-									<h3>Actions</h3>
-									<ul class="actions">
-										<li><a href="#" class="button primary">Primary</a></li>
-										<li><a href="#" class="button">Default</a></li>
-									</ul>
-									<ul class="actions small">
-										<li><a href="#" class="button primary small">Small</a></li>
-										<li><a href="#" class="button small">Small</a></li>
-									</ul>
-									<div class="row">
-										<div class="col-6 col-12-small">
-											<ul class="actions stacked">
-												<li><a href="#" class="button primary">Default</a></li>
-												<li><a href="#" class="button">Default</a></li>
-											</ul>
-										</div>
-										<div class="col-6 col-12-small">
-											<ul class="actions stacked">
-												<li><a href="#" class="button primary small">Small</a></li>
-												<li><a href="#" class="button small">Small</a></li>
-											</ul>
-										</div>
-									</div>
-									<div class="row">
-										<div class="col-6 col-12-small">
-											<ul class="actions stacked">
-												<li><a href="#" class="button primary fit">Default</a></li>
-												<li><a href="#" class="button fit">Default</a></li>
-											</ul>
-										</div>
-										<div class="col-6 col-12-small">
-											<ul class="actions stacked">
-												<li><a href="#" class="button primary small fit">Small</a></li>
-												<li><a href="#" class="button small fit">Small</a></li>
-											</ul>
-										</div>
-									</div>
-
-									<hr />
-
-								<!-- Blockquote -->
-									<h2>Blockquote</h2>
-									<blockquote>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan faucibus. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis.</blockquote>
-
-									<hr />
-
-								<!-- Table -->
-									<h2>Table</h2>
-
-									<h3>Default</h3>
-									<div class="table-wrapper">
-										<table>
-											<thead>
-												<tr>
-													<th>Name</th>
-													<th>Description</th>
-													<th>Price</th>
-												</tr>
-											</thead>
-											<tbody>
-												<tr>
-													<td>Item 1</td>
-													<td>Ante turpis integer aliquet porttitor.</td>
-													<td>29.99</td>
-												</tr>
-												<tr>
-													<td>Item 2</td>
-													<td>Vis ac commodo adipiscing arcu aliquet.</td>
-													<td>19.99</td>
-												</tr>
-												<tr>
-													<td>Item 3</td>
-													<td> Morbi faucibus arcu accumsan lorem.</td>
-													<td>29.99</td>
-												</tr>
-												<tr>
-													<td>Item 4</td>
-													<td>Vitae integer tempus condimentum.</td>
-													<td>19.99</td>
-												</tr>
-												<tr>
-													<td>Item 5</td>
-													<td>Ante turpis integer aliquet porttitor.</td>
-													<td>29.99</td>
-												</tr>
-											</tbody>
-											<tfoot>
-												<tr>
-													<td colspan="2"></td>
-													<td>100.00</td>
-												</tr>
-											</tfoot>
-										</table>
-									</div>
-
-									<h3>Alternate</h3>
-									<div class="table-wrapper">
-										<table class="alt">
-											<thead>
-												<tr>
-													<th>Name</th>
-													<th>Description</th>
-													<th>Price</th>
-												</tr>
-											</thead>
-											<tbody>
-												<tr>
-													<td>Item 1</td>
-													<td>Ante turpis integer aliquet porttitor.</td>
-													<td>29.99</td>
-												</tr>
-												<tr>
-													<td>Item 2</td>
-													<td>Vis ac commodo adipiscing arcu aliquet.</td>
-													<td>19.99</td>
-												</tr>
-												<tr>
-													<td>Item 3</td>
-													<td> Morbi faucibus arcu accumsan lorem.</td>
-													<td>29.99</td>
-												</tr>
-												<tr>
-													<td>Item 4</td>
-													<td>Vitae integer tempus condimentum.</td>
-													<td>19.99</td>
-												</tr>
-												<tr>
-													<td>Item 5</td>
-													<td>Ante turpis integer aliquet porttitor.</td>
-													<td>29.99</td>
-												</tr>
-											</tbody>
-											<tfoot>
-												<tr>
-													<td colspan="2"></td>
-													<td>100.00</td>
-												</tr>
-											</tfoot>
-										</table>
-									</div>
-
-									<hr />
-
-								<!-- Buttons -->
-									<h2>Buttons</h2>
-									<ul class="actions">
-										<li><a href="#" class="button primary">Primary</a></li>
-										<li><a href="#" class="button">Default</a></li>
-									</ul>
-									<ul class="actions">
-										<li><a href="#" class="button primary large">Large</a></li>
-										<li><a href="#" class="button">Default</a></li>
-										<li><a href="#" class="button small">Small</a></li>
-									</ul>
-									<ul class="actions fit">
-										<li><a href="#" class="button primary fit">Fit</a></li>
-										<li><a href="#" class="button fit">Fit</a></li>
-									</ul>
-									<ul class="actions fit small">
-										<li><a href="#" class="button primary fit small">Fit + Small</a></li>
-										<li><a href="#" class="button fit small">Fit + Small</a></li>
-									</ul>
-									<ul class="actions">
-										<li><a href="#" class="button primary icon solid fa-search">Icon</a></li>
-										<li><a href="#" class="button icon solid fa-download">Icon</a></li>
-									</ul>
-									<ul class="actions">
-										<li><span class="button primary disabled">Primary</span></li>
-										<li><span class="button disabled">Default</span></li>
-									</ul>
-
-									<hr />
-
-								<!-- Form -->
-									<h2>Form</h2>
-
-									<form method="post" action="#">
-										<div class="row gtr-uniform">
-											<div class="col-6 col-12-xsmall">
-												<input type="text" name="demo-name" id="demo-name" value="" placeholder="Name" />
-											</div>
-											<div class="col-6 col-12-xsmall">
-												<input type="email" name="demo-email" id="demo-email" value="" placeholder="Email" />
-											</div>
-											<!-- Break -->
-											<div class="col-12">
-												<select name="demo-category" id="demo-category">
-													<option value="">- Category -</option>
-													<option value="1">Manufacturing</option>
-													<option value="1">Shipping</option>
-													<option value="1">Administration</option>
-													<option value="1">Human Resources</option>
-												</select>
-											</div>
-											<!-- Break -->
-											<div class="col-4 col-12-small">
-												<input type="radio" id="demo-priority-low" name="demo-priority" checked>
-												<label for="demo-priority-low">Low</label>
-											</div>
-											<div class="col-4 col-12-small">
-												<input type="radio" id="demo-priority-normal" name="demo-priority">
-												<label for="demo-priority-normal">Normal</label>
-											</div>
-											<div class="col-4 col-12-small">
-												<input type="radio" id="demo-priority-high" name="demo-priority">
-												<label for="demo-priority-high">High</label>
-											</div>
-											<!-- Break -->
-											<div class="col-6 col-12-small">
-												<input type="checkbox" id="demo-copy" name="demo-copy">
-												<label for="demo-copy">Email me a copy</label>
-											</div>
-											<div class="col-6 col-12-small">
-												<input type="checkbox" id="demo-human" name="demo-human" checked>
-												<label for="demo-human">I am a human</label>
-											</div>
-											<!-- Break -->
-											<div class="col-12">
-												<textarea name="demo-message" id="demo-message" placeholder="Enter your message" rows="6"></textarea>
-											</div>
-											<!-- Break -->
-											<div class="col-12">
-												<ul class="actions">
-													<li><input type="submit" value="Send Message" class="primary" /></li>
-													<li><input type="reset" value="Reset" /></li>
-												</ul>
-											</div>
-										</div>
-									</form>
-
-									<hr />
-
-								<!-- Image -->
-									<h2>Image</h2>
-
-									<h3>Fit</h3>
-									<span class="image fit"><img src="images/pic01.jpg" alt="" /></span>
-									<div class="box alt">
-										<div class="row gtr-50 gtr-uniform">
-											<div class="col-4"><span class="image fit"><img src="images/pic02.jpg" alt="" /></span></div>
-											<div class="col-4"><span class="image fit"><img src="images/pic03.jpg" alt="" /></span></div>
-											<div class="col-4"><span class="image fit"><img src="images/pic04.jpg" alt="" /></span></div>
-											<!-- Break -->
-											<div class="col-4"><span class="image fit"><img src="images/pic04.jpg" alt="" /></span></div>
-											<div class="col-4"><span class="image fit"><img src="images/pic02.jpg" alt="" /></span></div>
-											<div class="col-4"><span class="image fit"><img src="images/pic03.jpg" alt="" /></span></div>
-											<!-- Break -->
-											<div class="col-4"><span class="image fit"><img src="images/pic03.jpg" alt="" /></span></div>
-											<div class="col-4"><span class="image fit"><img src="images/pic04.jpg" alt="" /></span></div>
-											<div class="col-4"><span class="image fit"><img src="images/pic02.jpg" alt="" /></span></div>
-										</div>
-									</div>
-
-									<h3>Left &amp; Right</h3>
-									<p><span class="image left"><img src="images/pic08.jpg" alt="" /></span>Lorem ipsum dolor sit accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Vestibulum ante ipsum primis in faucibus magna blandit adipiscing eu felis iaculis.</p>
-									<p><span class="image right"><img src="images/pic09.jpg" alt="" /></span>Lorem ipsum dolor sit accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Vestibulum ante ipsum primis in faucibus magna blandit adipiscing eu felis iaculis.</p>
-
-									<hr />
-
-								<!-- Box -->
-									<h2>Box</h2>
-									<div class="box">
-										<p>Felis sagittis eget tempus primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Magna sed etiam ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus lorem ipsum dolor sit amet nullam. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Vestibulum ante ipsum primis in faucibus magna blandit adipiscing eu felis iaculis volutpat lorem ipsum dolor.</p>
-									</div>
-
-									<hr />
-
-								<!-- Preformatted Code -->
-									<h2>Preformatted</h2>
-									<pre><code>i = 0;
-
-while (!deck.isInOrder()) {
-    print 'Iteration ' + i;
-    deck.shuffle();
-    i++;
-}
-
-print 'It took ' + i + ' iterations to sort the deck.';
-</code></pre>
-
+									</section>
 							</section>
-
 					</div>
 
 				<!-- Footer -->
-					<footer id="footer">
+				<footer id="footer">
+					<section class="split contact">
 						<section>
-							<form method="post" action="#">
-								<div class="fields">
-									<div class="field">
-										<label for="name">Name</label>
-										<input type="text" name="name" id="name" />
-									</div>
-									<div class="field">
-										<label for="email">Email</label>
-										<input type="text" name="email" id="email" />
-									</div>
-									<div class="field">
-										<label for="message">Message</label>
-										<textarea name="message" id="message" rows="3"></textarea>
-									</div>
-								</div>
-								<ul class="actions">
-									<li><input type="submit" value="Send Message" /></li>
-								</ul>
-							</form>
+							<h3>Phone</h3>
+							<p><a href="tel:+15083044385">+1 (508) 304-4385</a></p>
 						</section>
-						<section class="split contact">
-							<section class="alt">
-								<h3>Address</h3>
-								<p>1234 Somewhere Road #87257<br />
-								Nashville, TN 00000-0000</p>
-							</section>
-							<section>
-								<h3>Phone</h3>
-								<p><a href="#">(000) 000-0000</a></p>
-							</section>
-							<section>
-								<h3>Email</h3>
-								<p><a href="#">info@untitled.tld</a></p>
-							</section>
-							<section>
-								<h3>Social</h3>
-								<ul class="icons alt">
-									<li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
-									<li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
-									<li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
-									<li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
-								</ul>
-							</section>
+						<section>
+							<h3>Email</h3>
+							<p><a href="mailto:punitpalsam@gmail.com">punitpalsam@gmail.com</a></p>
 						</section>
-					</footer>
-
-				<!-- Copyright -->
-					<div id="copyright">
-						<ul><li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
-					</div>
-
+						<section>
+							<h3>Social</h3>
+							<ul class="icons alt">
+								<li><a href="https://medium.com/@thepkwrites" class="icon brands alt fa-medium"><span class="label">Medium</span></a></li>
+								<li><a href="https://www.linkedin.com/in/punit-kumar-cu2025/" class="icon brands alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
+								<li><a href="https://github.com/thepkcodes" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+							</ul>
+						</section>
+					</section>
+				</footer>
 			</div>
 
 		<!-- Scripts -->
@@ -507,5 +217,18 @@ print 'It took ' + i + ' iterations to sort the deck.';
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
 
+	<script>
+		const fadeIns = document.querySelectorAll('.fade-in');
+			  
+		const observer = new IntersectionObserver((entries) => {
+			entries.forEach(entry => {
+				if (entry.isIntersecting) {
+					entry.target.classList.add('visible');
+				}
+			});
+		}, { threshold: 0.1 });
+			  
+		fadeIns.forEach(el => observer.observe(el));
+	</script>	  	
 	</body>
 </html>
